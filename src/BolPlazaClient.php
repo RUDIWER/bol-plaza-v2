@@ -689,7 +689,7 @@ class BolPlazaClient{
     public function getOrder($id)
     {
         $orders = $this->getOrders();
-        if (count($orders)) {
+        if ($orders) {
             foreach ($orders as $order) {
                 if ($order->id == $id) {
                     return $order;    
